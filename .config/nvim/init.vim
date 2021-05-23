@@ -1,7 +1,10 @@
 set completeopt=menuone,noselect
+set mouse=a
 
 call plug#begin()
 Plug 'hrsh7th/vim-vsnip'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'shaunsingh/moonlight.nvim'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'sbdchd/neoformat'
@@ -23,7 +26,7 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 let mapleader = " "
-let g:chris = "challenger_deep"
+let g:chris = "moonlight"
 call luaeval('vim.cmd("colorscheme " .. _A[1])', [g:chris])
 
 lua require("chris")

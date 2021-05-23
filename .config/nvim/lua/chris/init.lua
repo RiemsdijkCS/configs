@@ -1,6 +1,7 @@
 require("chris.compe")
 require("chris.lsp")
 require("chris.galaxyline")
+require("chris.treesitter")
 require("lspsaga").init_lsp_saga()
 require("todo-comments").setup{}
 
